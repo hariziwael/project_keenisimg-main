@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc moy LSIM1</title>
+    <link rel="icon" type="image/webP" href="isim-removebg-preview.webP">
+    <link rel="preload" as="image" href="isim-removebg-preview.webP">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="nav" id="button">
+           <input type="checkbox"/>
+           <svg>
+             <use xlink:href="#menu" />
+             <use xlink:href="#menu" />
+           </svg>
+           <span class="tooltip">Home Page</span>
+         </div>
+         <!-- SVG -->
+         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+           <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" id="menu">
+             <path d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4"/>
+           </symbol>
+         </svg>
+         <div id="img">
+           <div id="par">
+             <p><b>كيين لإحتساب المعدل</b></p>
+           </div>
+           <img  src="isim-removebg-preview.webP" alt="Image" style="width: 50px; height: 50px;" > 
+        </div> 
+    </header>
+    <div class="line"></div>
+    <nav class="introduction">
+        <p> <b>LSIM1</b>  مع هذا الموقع يمكنك   <span class="highlight">احتساب</span> معدلك للسداسي الاول   قسم </p>
+    </nav>
+
+    <div class="container">
+      <h2>Enter the grades</h2>
+      <form>
+          <!-- Algebre -->
+          <div class="form-group">
+              <label for="algebreds">Algebre DS:</label>
+              <input type="text" id="algebreds" name="Algebre DS">
+              <label for="algebreex">Algebre EX:</label>
+              <input type="text" id="algebreex" name="Algebre EX">
+          </div>
+          <!-- Analyse -->
+          <div class="form-group">
+              <label for="analyseds">Analyse DS:</label>
+              <input type="text" id="analyseds" name="Analyse DS">
+              <label for="analyseex">Analyse EX:</label>
+              <input type="text" id="analyseex" name="Analyse EX">
+          </div>
+          <!-- ASD -->
+          <div class="form-group">
+              <label for="asdds">ASD DS:</label>
+              <input type="text" id="asdds" name="ASD DS">
+              <label for="asdex">ASD EX:</label>
+              <input type="text" id="asdex" name="ASD EX">
+          </div>
+          <!-- Programmation C -->
+          <div class="form-group">
+              <label for="progcds">C DS:</label>
+              <input type="text" id="progcds" name="C DS">
+              <label for="progcex">C EX:</label>
+              <input type="text" id="progcex" name="C EX">
+              <label for="progctp">C TP:</label>
+              <input type="text" id="progctp" name="C TP">
+          </div>
+          <!-- Systemes d'Exploitation -->
+          <div class="form-group">
+              <label for="SEds">SE DS:</label>
+              <input type="text" id="SEds" name="SE DS">
+              <label for="SEex">SE EX:</label>
+              <input type="text" id="SEex" name="SE EX">
+              <label for="SEtp">SE TP:</label>
+              <input type="text" id="SEtp" name="SE TP">
+          </div>
+          <!-- Systemes Logiques -->
+          <div class="form-group">
+              <label for="SYSLOGIQUEds">SYSLOGIQUE DS:</label>
+              <input type="text" id="SYSLOGIQUEds" name="SYSLOGIQUE DS">
+              <label for="SYSLOGIQUEex">SYSLOGIQUE EX:</label>
+              <input type="text" id="SYSLOGIQUEex" name="SYSLOGIQUE EX">
+              <label for="SYSLOGIQUEtp">SYSLOGIQUE TP:</label>
+              <input type="text" id="SYSLOGIQUEtp" name="SYSLOGIQUE TP">
+          </div>
+          <!-- Logique Formelle -->
+          <div class="form-group">
+              <label for="lfds">L.FORMELLE DS:</label>
+              <input type="text" id="lfds" name="L.FORMELLE DS">
+              <label for="lfex">L.FORMELLE EX:</label>
+              <input type="text" id="lfex" name="L.FORMELLE EX">
+          </div>
+          <!-- Multimedia -->
+          <div class="form-group">
+              <label for="MULTIMEDIAds">MULTIMEDIA DS:</label>
+              <input type="text" id="MULTIMEDIAds" name="MULTIMEDIA DS">
+              <label for="MULTIMEDIAex">MULTIMEDIA EX:</label>
+              <input type="text" id="MULTIMEDIAex" name="MULTIMEDIA EX">
+              <label for="MULTIMEDIAtp">MULTIMEDIA TP:</label>
+              <input type="text" id="MULTIMEDIAtp" name="MULTIMEDIA TP">
+          </div>
+          <!-- Langues -->
+          <div class="form-group">
+              <label for="anglaisds1">Anglais DS1:</label>
+              <input type="text" id="anglaisds1" name="Anglais DS1">
+              <label for="anglaisds2">Anglais DS2:</label>
+              <input type="text" id="anglaisds2" name="Anglais DS2">
+              <label for="anglaisoral">Anglais ORAL:</label>
+              <input type="text" id="anglaisoral" name="Anglais ORAL">
+          </div>
+          <div class="form-group">
+              <label for="FRds1">Francais DS1:</label>
+              <input type="text" id="FRds1" name="Francais DS1">
+              <label for="FRds2">Francais DS2:</label>
+              <input type="text" id="FRds2" name="Francais DS2">
+              <label for="FRoral">Francais ORAL:</label>
+              <input type="text" id="FRoral" name="Francais ORAL">
+          </div>
+          <input type="button" id="btnRES" value="حساب المعدل" onclick="RES()">
+      </form>
+  </div>
+  <footer>
+    
+    <p class="foot">© 2025-2024</p>
+    <p>موقع يساعد طالب المعهد العالي للإعلامية و الملتيميديا بقابس على احتساب معدل السداسي الأول</p>
+    
+    <p class="foot">: إعداد الطالب</p>
+    <p>وائل حريزي</p>
+  </footer>
+  <!--  -->
+  <div id="toast"></div>
+<!--  -->
+    <script>
+        // JavaScript to handle click event
+        document.getElementById('button').addEventListener('click', function() {
+          // Redirect to index.html
+          window.location.href = 'index.html';
+        });
+
+
+// 
+        // Function to show toast message
+  function showToast(message) {
+    var toast = document.getElementById("toast");
+    toast.className = "show";
+    toast.innerHTML = message;
+    setTimeout(function() { toast.className = toast.className.replace("show", ""); }, 3000);
+  }
+
+  // Function to validate input values
+  function validateInput(event) {
+    const value = parseFloat(event.target.value);
+    const fieldName = event.target.name;
+    if (isNaN(value) || value < 0 || value > 20) {
+      if (value < 0) {
+        showToast(`In ${fieldName}, you put a number less than 0`);
+      } else if (value > 20) {
+        showToast(`In ${fieldName}, you put a number greater than 20`);
+      }
+      event.target.value = '';
+    }
+  }
+
+  // Add event listeners to all input fields
+  window.onload = function() {
+    const inputs = document.querySelectorAll("input[type='text']");
+    inputs.forEach(input => {
+      input.addEventListener("input", validateInput);
+    });
+  }
+// 
+
+
+
+        function RES() {
+    try {
+        const num1 = parseFloat(document.getElementById("algebreds").value)   ;
+        const num2 = parseFloat(document.getElementById("algebreex").value)   ;
+        const result1 = num1 * 0.3 + num2 * 0.7;
+        
+        const num3 = parseFloat(document.getElementById("analyseds").value)   ;
+        const num4 = parseFloat(document.getElementById("analyseex").value)   ;
+        const result2 = num3 * 0.3 + num4 * 0.7;
+        
+        const num5 = parseFloat(document.getElementById("asdds").value)   ;
+        const num6 = parseFloat(document.getElementById("asdex").value)   ;
+        const result3 = num5 * 0.3 + num6 * 0.7;
+        
+        const num7 = parseFloat(document.getElementById("progcds").value)   ;
+        const num8 = parseFloat(document.getElementById("progcex").value)   ;
+        const num9 = parseFloat(document.getElementById("progctp").value)   ;
+        const result4 = num7 * 0.15 + num9 * 0.15 + num8 * 0.7;
+        
+        const num10 = parseFloat(document.getElementById("SEds").value)   ;
+        const num11 = parseFloat(document.getElementById("SEex").value)   ;
+        const num12 = parseFloat(document.getElementById("SEtp").value)   ;
+        const result5 = num10 * 0.15 + num12 * 0.15 + num11 * 0.7;
+        
+        const num13 = parseFloat(document.getElementById("SYSLOGIQUEds").value)   ;
+        const num14 = parseFloat(document.getElementById("SYSLOGIQUEex").value)   ;
+        const num15 = parseFloat(document.getElementById("SYSLOGIQUEtp").value)   ;
+        const result6 = num13 * 0.15 + num15 * 0.15 + num14 * 0.7;
+        
+        const num16 = parseFloat(document.getElementById("lfds").value)   ;
+        const num17 = parseFloat(document.getElementById("lfex").value)   ;
+        const result7 = num16 * 0.3 + num17 * 0.7;
+        
+        const num18 = parseFloat(document.getElementById("MULTIMEDIAds").value)   ;
+        const num19 = parseFloat(document.getElementById("MULTIMEDIAex").value)   ;
+        const num20 = parseFloat(document.getElementById("MULTIMEDIAtp").value)   ;
+        const result8 = num18 * 0.15 + num20 * 0.15 + num19 * 0.7;
+        
+        const num21 = parseFloat(document.getElementById("anglaisds1").value)   ;
+        const num22 = parseFloat(document.getElementById("anglaisds2").value)   ;
+        const num23 = parseFloat(document.getElementById("anglaisoral").value)   ;
+        const result9 = num21 * 0.4 + num22 * 0.4 + num23 * 0.2;
+        
+        const num24 = parseFloat(document.getElementById("FRds1").value)   ;
+        const num25 = parseFloat(document.getElementById("FRds2").value)   ;
+        const num26 = parseFloat(document.getElementById("FRoral").value)   ;
+        const result10 = num24 * 0.4 + num25 * 0.4 + num26 * 0.2;
+        
+        const result = (result1 * 1.5 + result2 * 1.5 + result3 * 2 + result4 * 1.5 + result5 * 1.5 + result6 * 2 + result7 * 1.5 + result8 * 1.5 + result9 + result10) / 15;
+        
+        const btnRES = document.getElementById("btnRES");
+        if (result >= 10) {
+            btnRES.value = `${result.toFixed(2)} MABROUUK`;
+        } else {
+            btnRES.value = `${result.toFixed(2)} HARD LUCK 😢`;
+        }
+    } catch (error) {
+        document.getElementById("btnRES").value = 'Please enter valid numbers';
+    }
+}
+
+
+
+    </script>
+
+
+
+</body>
+</html>

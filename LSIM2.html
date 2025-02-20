@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc moy LSIM2</title>
+    <link rel="icon" type="image/webP" href="isim-removebg-preview.webP">
+    <link rel="preload" as="image" href="isim-removebg-preview.webP">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="nav" id="button">
+           <input type="checkbox"/>
+           <svg>
+             <use xlink:href="#menu" />
+             <use xlink:href="#menu" />
+           </svg>
+           <span class="tooltip">Home Page</span>
+         </div>
+         <!-- SVG -->
+         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+           <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" id="menu">
+             <path d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4"/>
+           </symbol>
+         </svg>
+         <div id="img">
+           <div id="par">
+             <p><b>كيين لإحتساب المعدل</b></p>
+           </div>
+           <img  src="isim-removebg-preview.webP" alt="Image" style="width: 50px; height: 50px;" > 
+        </div> 
+    </header>
+    <div class="line"></div>
+    <nav class="introduction">
+        <p> <b>LSIM2</b>  مع هذا الموقع يمكنك   <span class="highlight">احتساب</span> معدلك للسداسي الاول   قسم </p>
+    </nav>
+
+    <div class="container">
+      <h2>Enter the grades</h2>
+      <form>
+          <!-- proba -->
+          <div class="form-group">
+              <label for="probads">Proba DS:</label>
+              <input type="text" id="probads" name="Proba DS">
+              <label for="probaex">Proba EX:</label>
+              <input type="text" id="probaex" name="Proba EX">
+              <label for="probatp">Proba TP:</label>
+              <input type="text" id="probatp" name="Proba TP">
+          </div>
+          <!-- automates -->
+          <div class="form-group">
+              <label for="automatesds">Automates DS:</label>
+              <input type="text" id="automatesds" name="Automates DS">
+              <label for="automatesex">Automates EX:</label>
+              <input type="text" id="automatesex" name="Automates EX">
+          </div>
+          <!-- graphes -->
+          <div class="form-group">
+              <label for="graphesds">Graphes DS:</label>
+              <input type="text" id="graphesds" name="Graphes DS">
+              <label for="graphesex">Graphes EX:</label>
+              <input type="text" id="graphesex" name="Graphes EX">
+          </div>
+          <!-- conception -->
+          <div class="form-group">
+              <label for="conceptionds">Conception DS:</label>
+              <input type="text" id="conceptionds" name="Conception DS">
+              <label for="conceptionex">Conception EX:</label>
+              <input type="text" id="conceptionex" name="Conception EX">
+          </div>
+          <!--java-->
+          <div class="form-group">
+              <label for="javads">Java DS:</label>
+              <input type="text" id="javads" name="Java DS">
+              <label for="javaex">Java EX:</label>
+              <input type="text" id="javaex" name="Java EX">
+              <label for="javatp">Java TP:</label>
+              <input type="text" id="javatp" name="Java TP">
+          </div>
+          <!--BSD-->
+          <div class="form-group">
+              <label for="BSDds">BSD DS:</label>
+              <input type="text" id="BSDds" name="BSD DS">
+              <label for="BSDex">BSD EX:</label>
+              <input type="text" id="BSDex" name="BSD EX">
+              <label for="BSDtp">BSD TP:</label>
+              <input type="text" id="BSDtp" name="BSD TP">
+          </div>
+          <!--reseaux-->
+          <div class="form-group">
+              <label for="reseauxds">Reseaux DS:</label>
+              <input type="text" id="reseauxds" name="Reseaux DS">
+              <label for="reseauxex">Reseaux EX:</label>
+              <input type="text" id="reseauxex" name="Reseaux EX">
+              <label for="reseauxtp">Reseaux TP:</label>
+              <input type="text" id="reseauxtp" name="Reseaux TP">
+          </div>
+          <!-- anglais -->
+          <div class="form-group">
+              <label for="anglaisds1">Anglais DS1:</label>
+              <input type="text" id="anglaisds1" name="Anglais DS1">
+              <label for="anglaisds2">Anglais DS2:</label>
+              <input type="text" id="anglaisds2" name="Anglais DS2">
+              <label for="anglaisoral">Anglais ORAL:</label>
+              <input type="text" id="anglaisoral" name="Anglais ORAL">
+          </div>
+          <!-- gesdentreprise-->
+          <div class="form-group">
+              <label for="gesdentrepriseds1">GesDentreprise DS1:</label>
+              <input type="text" id="gesdentrepriseds1" name="GesDentreprise DS1">
+              <label for="gesdentrepriseds2">GesDentreprise DS2:</label>
+              <input type="text" id="gesdentrepriseds2" name="GesDentreprise DS2">
+              <label for="gesdentrepriseoral">GesDentreprise ORAL:</label>
+              <input type="text" id="gesdentrepriseoral" name="GesDentreprise ORAL">
+          </div>
+          <!-- web -->
+          <div class="form-group">
+              <label for="webds">Web DS:</label>
+              <input type="text" id="webds" name="Web DS">
+              <label for="webex">Web EX:</label>
+              <input type="text" id="webex" name="Web EX">
+              <label for="webtp">Web TP:</label>
+              <input type="text" id="webtp" name="Web TP">
+          </div>
+          <!-- animation -->
+          <div class="form-group">
+            <label for="animationds">Animation DS:</label>
+            <input type="text" id="animationds" name="Animation DS">
+            <label for="animationex">Animation EX:</label>
+            <input type="text" id="animationex" name="Animation EX">
+            <label for="animationtp">Animation TP:</label>
+            <input type="text" id="animationtp" name="Animation TP">
+        </div>
+          <input type="button" id="btnRES" value="حساب المعدل" onclick="RES()">
+      </form>
+  </div>
+  <footer>
+    <p class="foot">© 2025-2024</p>
+    <p>موقع يساعد طالب المعهد العالي للإعلامية و الملتيميديا بقابس على احتساب معدل السداسي الأول</p>
+    
+    <p class="foot">: إعداد الطالب</p>
+    <p>وائل حريزي</p>
+  </footer>
+  <div id="toast"></div>
+
+    <script>
+        // JavaScript to handle click event
+        document.getElementById('button').addEventListener('click', function() {
+          // Redirect to index.html
+          window.location.href = 'index.html';
+        });
+
+        function showToast(message) {
+    var toast = document.getElementById("toast");
+    toast.className = "show";
+    toast.innerHTML = message;
+    setTimeout(function() { toast.className = toast.className.replace("show", ""); }, 3000);
+  }
+
+  // Function to validate input values
+  function validateInput(event) {
+    const value = parseFloat(event.target.value);
+    const fieldName = event.target.name;
+    if (isNaN(value) || value < 0 || value > 20) {
+      if (value < 0) {
+        showToast(`In ${fieldName}, you put a number less than 0`);
+      } else if (value > 20) {
+        showToast(`In ${fieldName}, you put a number greater than 20`);
+      }
+      event.target.value = '';
+    }
+  }
+
+  // Add event listeners to all input fields
+  window.onload = function() {
+    const inputs = document.querySelectorAll("input[type='text']");
+    inputs.forEach(input => {
+      input.addEventListener("input", validateInput);
+    });
+  }
+
+        function RES() {
+    try {
+        const num1 = parseFloat(document.getElementById("probads").value)  ;
+        const num2 = parseFloat(document.getElementById("probaex").value)  ;
+        const num3 = parseFloat(document.getElementById("probatp").value)  ;
+        const result1 = num1 * 0.15 + num3 * 0.15 +  num2 * 0.7;
+        
+        const num4 = parseFloat(document.getElementById("automatesds").value)  ;
+        const num5 = parseFloat(document.getElementById("automatesex").value)  ;
+        const result2 = num4 * 0.3 + num5 * 0.7;
+        
+        const num6 = parseFloat(document.getElementById("graphesds").value)  ;
+        const num7 = parseFloat(document.getElementById("graphesex").value)  ;
+        const result3 = num6 * 0.3 + num7 * 0.7;
+        
+        const num8 = parseFloat(document.getElementById("conceptionds").value)  ;
+        const num9 = parseFloat(document.getElementById("conceptionex").value)  ;
+        
+        const result4 =num8 * 0.3 + num9 * 0.7;
+        
+        const num10 = parseFloat(document.getElementById("javads").value)  ;
+        const num11 = parseFloat(document.getElementById("javaex").value)  ;
+        const num12 = parseFloat(document.getElementById("javatp").value)  ;
+        const result5 = num10 * 0.15 + num12 * 0.15 + num11 * 0.7;
+        
+        const num13 = parseFloat(document.getElementById("BSDds").value)  ;
+        const num14 = parseFloat(document.getElementById("BSDex").value)  ;
+        const num15 = parseFloat(document.getElementById("BSDtp").value)  ;
+        const result6 = num13 * 0.15 + num15 * 0.15 + num14 * 0.7;
+        
+        const num16 = parseFloat(document.getElementById("reseauxds").value)  ;
+        const num17 = parseFloat(document.getElementById("reseauxex").value)  ;
+        const num18 = parseFloat(document.getElementById("reseauxtp").value)  ;
+        const result7 = num16 * 0.15 + num18 * 0.15 + num17 * 0.7;
+
+        const num19 = parseFloat(document.getElementById("anglaisds1").value)  ;
+        const num20 = parseFloat(document.getElementById("anglaisds2").value)  ;
+        const num21 = parseFloat(document.getElementById("anglaisoral").value)  ;
+        const result8 = num19 * 0.4 + num20 * 0.4 + num21 * 0.2;
+        
+        const num22 = parseFloat(document.getElementById("gesdentrepriseds1").value)  ;
+        const num23 = parseFloat(document.getElementById("gesdentrepriseds2").value)  ;
+        const num24 = parseFloat(document.getElementById("gesdentrepriseoral").value)  ;
+        const result9 = num22 * 0.4 + num23 * 0.4 + num24 * 0.2;
+        
+        const num25 = parseFloat(document.getElementById("webds").value)  ;
+        const num26 = parseFloat(document.getElementById("webex").value)  ;
+        const num27 = parseFloat(document.getElementById("webtp").value)  ;
+        const result10 = num25 * 0.15 + num27 * 0.15 + num26 * 0.7;
+        
+        const num28 = parseFloat(document.getElementById("animationds").value)  ;
+        const num29 = parseFloat(document.getElementById("animationex").value)  ;
+        const num30 = parseFloat(document.getElementById("animationtp").value)  ;
+        const result11 = num28 * 0.15 + num30 * 0.15 + num29 * 0.7;
+
+        const result = (result1 * 2 + result2 * 1 + result3 * 1 + result4 * 1.5 + result5 * 2 + result6 * 1.5 + result7 * 1 + result8+ result9 + result10 * 1.5 + result11 * 1.5) / 15;
+        
+        const btnRES = document.getElementById("btnRES");
+        if (result >= 10) {
+            btnRES.value = `${result.toFixed(2)} MABROUUK`;
+        } else {
+            btnRES.value = `${result.toFixed(2)} HARD LUCK 😢`;
+        }
+    } catch (error) {
+        document.getElementById("btnRES").value = 'Please enter valid numbers';
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc moy LAM1</title>
+    <link rel="icon" type="image/webP" href="isim-removebg-preview.webP">
+    <link rel="preload" as="image" href="isim-removebg-preview.webP">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="nav" id="button">
+           <input type="checkbox"/>
+           <svg>
+             <use xlink:href="#menu" />
+             <use xlink:href="#menu" />
+           </svg>
+           <span class="tooltip">Home Page</span>
+         </div>
+         <!-- SVG -->
+         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+           <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" id="menu">
+             <path d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4"/>
+           </symbol>
+         </svg>
+         <div id="img">
+           <div id="par">
+             <p><b>كيين لإحتساب المعدل</b></p>
+           </div>
+           <img  src="isim-removebg-preview.webP" alt="Image" style="width: 50px; height: 50px;" > 
+        </div> 
+    </header>
+    <div class="line"></div>
+    <nav class="introduction">
+        <p> <b>LAM1</b>  مع هذا الموقع يمكنك   <span class="highlight">احتساب</span> معدلك للسداسي الاول   قسم </p>
+    </nav>
+
+    <div class="container">
+      <h2>Enter the grades</h2>
+      <form>
+          <!-- FondMultimedia -->
+          <div class="form-group">
+            <label for="FondMultimediads">FondMultimedia DS:</label>
+            <input type="text" id="FondMultimediads" name="FondMultimedia DS">
+            <label for="FondMultimediaex">FondMultimedia EX:</label>
+            <input type="text" id="FondMultimediaex" name="FondMultimedia EX">
+            <label for="FondMultimediatp">FondMultimedia TP:</label>
+            <input type="text" id="FondMultimediatp" name="FondMultimedia TP">
+          </div>
+          <!-- algorithme -->
+          <div class="form-group">
+              <label for="algorithmeds">Algorithme DS:</label>
+              <input type="text" id="algorithmeds" name="Algorithme DS">
+              <label for="algorithmeex">Algorithme EX:</label>
+              <input type="text" id="algorithmeex" name="Algorithme EX">
+              <label for="algorithmetp">Algorithme TP:</label>
+              <input type="text" id="algorithmetp" name="Algorithme TP">
+          </div>
+          <!-- generaliltes_inf   -->
+          <div class="form-group">
+              <label for="generaliltes_infds">GeneraliltesInf DS:</label>
+              <input type="text" id="generaliltes_infds" name="GeneraliltesInf DS">
+              <label for="generaliltes_infex">GeneraliltesInf EX:</label>
+              <input type="text" id="generaliltes_infex" name="GeneraliltesInf EX">
+              <label for="generaliltes_inftp">GeneraliltesIinf TP:</label>
+              <input type="text" id="generaliltes_inftp" name="GeneraliltesInf TP">
+          </div>
+          
+          <!-- communication -->
+          <div class="form-group">
+              <label for="communicationds">Communication DS:</label>
+              <input type="text" id="communicationds" name="Communication DS">
+              <label for="communicationex">Communication EX:</label>
+              <input type="text" id="communicationex" name="Communication EX">
+              <label for="communicationtp">Communication TP:</label>
+              <input type="text" id="communicationtp" name="Communication TP">
+          </div>
+          <!--concepts-->
+          <div class="form-group">
+              <label for="conceptsds">Concepts DS:</label>
+              <input type="text" id="conceptsds" name="Concepts DS">
+              <label for="conceptsex">Concepts EX:</label>
+              <input type="text" id="conceptsex" name="Concepts EX">
+              <label for="conceptstp">Concepts TP:</label>
+              <input type="text" id="conceptstp" name="Concepts TP">
+          </div>
+          <!--musique-->
+          <div class="form-group">
+              <label for="musiqueds">Musique DS:</label>
+              <input type="text" id="musiqueds" name="Musique DS">
+              <label for="musiqueex">Musique EX:</label>
+              <input type="text" id="musiqueex" name="Musique EX">
+              <label for="musiquetp">Musique TP:</label>
+              <input type="text" id="musiquetp" name="Musique TP">
+          </div>
+          <!--technologies-->
+          <div class="form-group">
+              <label for="technologiesds">Technologies DS:</label>
+              <input type="text" id="technologiesds" name="Technologies DS">
+              <label for="technologiesex">Technologies EX:</label>
+              <input type="text" id="technologiesex" name="Technologies EX">
+              <label for="technologiestp">Technologies TP:</label>
+              <input type="text" id="technologiestp" name="Technologies TP">
+          </div>
+          <!-- techniques_exp -->
+          <div class="form-group">
+            <label for="techniques_expds1">TechniquesExp DS1:</label>
+            <input type="text" id="techniques_expds1" name="TechniquesExp DS1">
+            <label for="techniques_expds2">TechniquesExp DS2:</label>
+            <input type="text" id="techniques_expds2" name="TechniquesExp DS2">
+            <label for="techniques_exporal">TechniquesExp ORAL:</label>
+            <input type="text" id="techniques_exporal" name="TechniquesExp ORAL">
+        </div>
+          <!-- activites_pratiques -->
+          <div class="form-group">
+            <label for="activites_pratiquesds1">ActivitesPratiques DS1:</label>
+            <input type="text" id="activites_pratiquesds1" name="ActivitesPratiques DS1">
+            <label for="activites_pratiquesds2">ActivitesPratiques DS2:</label>
+            <input type="text" id="activites_pratiquesds2" name="ActivitesPratiques DS2">
+            <label for="activites_pratiquesoral">ActivitesPratiques ORAL:</label>
+            <input type="text" id="activites_pratiquesoral" name="ActivitesPratiques ORAL">
+        </div>
+           <!-- anglais -->
+          <div class="form-group">
+            <label for="anglaisds1">Anglais DS1:</label>
+            <input type="text" id="anglaisds1" name="Anglais DS1">
+            <label for="anglaisds2">Anglais DS2:</label>
+            <input type="text" id="anglaisds2" name="Anglais DS2">
+            <label for="anglaisoral">Anglais ORAL:</label>
+            <input type="text" id="anglaisoral" name="Anglais ORAL">
+        </div>
+          <!-- tech_communication -->
+          <div class="form-group">
+              <label for="tech_communicationds1">TechCommunication DS1:</label>
+              <input type="text" id="tech_communicationds1" name="TechCommunication DS1">
+              <label for="tech_communicationds2">TechCommunication DS2:</label>
+              <input type="text" id="tech_communicationds2" name="TechCommunication DS2">
+              <label for="tech_communicationoral">TechCommunication ORAL:</label>
+              <input type="text" id="tech_communicationoral" name="TechCommunication ORAL">
+          </div>
+          <!-- competences-->
+          <div class="form-group">
+              <label for="competencesds1">Competences DS1:</label>
+              <input type="text" id="competencesds1" name="Competences DS1">
+              <label for="competencesds2">Competences DS2:</label>
+              <input type="text" id="competencesds2" name="Competences DS2">
+              <label for="competencesoral">Competences ORAL:</label>
+              <input type="text" id="competencesoral" name="Competences ORAL">
+          </div>
+       
+          <input type="button" id="btnRES" value="حساب المعدل" onclick="RES()">
+      </form>
+  </div>
+  <footer>
+    <p class="foot">© 2025-2024</p>
+    <p>موقع يساعد طالب المعهد العالي للإعلامية و الملتيميديا بقابس على احتساب معدل السداسي الأول</p>
+    
+    <p class="foot">: إعداد الطالب</p>
+    <p>وائل حريزي</p>
+  </footer>
+  <div id="toast"></div>
+
+    <script>
+        // JavaScript to handle click event
+        document.getElementById('button').addEventListener('click', function() {
+          // Redirect to index.html
+          window.location.href = 'index.html';
+        });
+
+               // Function to show toast message
+  function showToast(message) {
+    var toast = document.getElementById("toast");
+    toast.className = "show";
+    toast.innerHTML = message;
+    setTimeout(function() { toast.className = toast.className.replace("show", ""); }, 3000);
+  }
+
+  // Function to validate input values
+  function validateInput(event) {
+    const value = parseFloat(event.target.value);
+    const fieldName = event.target.name;
+    if (isNaN(value) || value < 0 || value > 20) {
+      if (value < 0) {
+        showToast(`In ${fieldName}, you put a number less than 0`);
+      } else if (value > 20) {
+        showToast(`In ${fieldName}, you put a number greater than 20`);
+      }
+      event.target.value = '';
+    }
+  }
+
+  // Add event listeners to all input fields
+  window.onload = function() {
+    const inputs = document.querySelectorAll("input[type='text']");
+    inputs.forEach(input => {
+      input.addEventListener("input", validateInput);
+    });
+  }
+
+        function RES() {
+    try {
+        const num1 = parseFloat(document.getElementById("FondMultimediads").value)  ;
+        const num2 = parseFloat(document.getElementById("FondMultimediaex").value)  ;
+        const num3 = parseFloat(document.getElementById("FondMultimediatp").value)  ;
+        const result1 = num1 * 0.15 + num3 * 0.15 + num2 * 0.7;
+
+        const num4 = parseFloat(document.getElementById("algorithmeds").value)  ;
+        const num5 = parseFloat(document.getElementById("algorithmeex").value)  ;
+        const num6 = parseFloat(document.getElementById("algorithmetp").value)  ;
+        const result2 =num4 * 0.15 + num6 * 0.15 +  num5 * 0.7;
+        
+        const num7 = parseFloat(document.getElementById("generaliltes_infds").value)  ;
+        const num8 = parseFloat(document.getElementById("generaliltes_infex").value)  ;
+        const num9 = parseFloat(document.getElementById("generaliltes_inftp").value)  ;
+        const result3 = num7 * 0.15 + num9 * 0.15 + num8 * 0.7;
+        
+        const num10 = parseFloat(document.getElementById("communicationds").value)  ;
+        const num11 = parseFloat(document.getElementById("communicationex").value)  ;
+        const num12 = parseFloat(document.getElementById("communicationtp").value)  ;
+        const result4 =num10 * 0.15 + num12 * 0.15 + num11 * 0.7;
+        
+        const num13 = parseFloat(document.getElementById("conceptsds").value)  ;
+        const num14 = parseFloat(document.getElementById("conceptsex").value)  ;
+        const num15 = parseFloat(document.getElementById("conceptstp").value)  ;
+        const result5 = num13 * 0.15 + num15 * 0.15 + num14 * 0.7;
+        
+        const num16 = parseFloat(document.getElementById("musiqueds").value)  ;
+        const num17 = parseFloat(document.getElementById("musiqueex").value)  ;
+        const num18 = parseFloat(document.getElementById("musiquetp").value)  ;
+        const result6 = num16 * 0.15 + num18 * 0.15 + num17 * 0.7;
+        
+        const num19 = parseFloat(document.getElementById("technologiesds").value)  ;
+        const num20 = parseFloat(document.getElementById("technologiesex").value)  ;
+        const num21 = parseFloat(document.getElementById("technologiestp").value)  ;
+        const result7 = num19 * 0.15 + num21 * 0.15 + num20 * 0.7;
+
+        const num22 = parseFloat(document.getElementById("techniques_expds1").value)  ;
+        const num23 = parseFloat(document.getElementById("techniques_expds2").value)  ;
+        const num24 = parseFloat(document.getElementById("techniques_exporal").value)  ;
+        const result8 = num22 * 0.4 + num23 * 0.4 + num24 * 0.2;
+
+        const num25 = parseFloat(document.getElementById("activites_pratiquesds1").value)  ;
+        const num26 = parseFloat(document.getElementById("activites_pratiquesds2").value)  ;
+        const num27 = parseFloat(document.getElementById("activites_pratiquesoral").value)  ;
+        const result9 = num25 * 0.4 + num26 * 0.4 + num27 * 0.2;
+
+        const num28 = parseFloat(document.getElementById("anglaisds1").value)  ;
+        const num29 = parseFloat(document.getElementById("anglaisds2").value)  ;
+        const num30 = parseFloat(document.getElementById("anglaisoral").value)  ;
+        const result10 = num28 * 0.4 + num29 * 0.4 + num30 * 0.2;
+
+        const num31 = parseFloat(document.getElementById("tech_communicationds1").value)  ;
+        const num32 = parseFloat(document.getElementById("tech_communicationds2").value)  ;
+        const num33 = parseFloat(document.getElementById("tech_communicationoral").value)  ;
+        const result11 = num31 * 0.4 + num32 * 0.4 + num33 * 0.2;
+        
+        const num34 = parseFloat(document.getElementById("competencesds1").value)  ;
+        const num35 = parseFloat(document.getElementById("competencesds2").value)  ;
+        const num36 = parseFloat(document.getElementById("competencesoral").value)  ;
+        const result12 = num34 * 0.4 + num35 * 0.4 + num36 * 0.2;
+        
+  
+        
+
+
+        const result = (result1 + result2 + result3 + result4 + result5 * 2 + result6 + result7 * 2 + result8 + result9 * 2 + result10 + result11 + result12) / 15;
+        
+        const btnRES = document.getElementById("btnRES");
+        if (result >= 10) {
+            btnRES.value = `${result.toFixed(2)} MABROUUK`;
+        } else {
+            btnRES.value = `${result.toFixed(2)} HARD LUCK 😢`;
+        }
+    } catch (error) {
+        document.getElementById("btnRES").value = 'Please enter valid numbers';
+    }
+}
+    </script>
+</body>
+</html>

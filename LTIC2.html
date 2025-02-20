@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc moy LTIC2</title>
+    <link rel="icon" type="image/webP" href="isim-removebg-preview.webP">
+    <link rel="preload" as="image" href="isim-removebg-preview.webP">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="nav" id="button">
+           <input type="checkbox"/>
+           <svg>
+             <use xlink:href="#menu" />
+             <use xlink:href="#menu" />
+           </svg>
+           <span class="tooltip">Home Page</span>
+         </div>
+         <!-- SVG -->
+         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+           <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" id="menu">
+             <path d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4"/>
+           </symbol>
+         </svg>
+         <div id="img">
+           <div id="par">
+             <p><b>كيين لإحتساب المعدل</b></p>
+           </div>
+           <img  src="isim-removebg-preview.webP" alt="Image" style="width: 50px; height: 50px;" > 
+        </div> 
+    </header>
+    <div class="line"></div>
+    <nav class="introduction">
+        <p> <b>LTIC2</b>  مع هذا الموقع يمكنك   <span class="highlight">احتساب</span> معدلك للسداسي الاول   قسم </p>
+    </nav>
+
+    <div class="container">
+      <h2>Enter the grades</h2>
+      <form>
+          <!-- automatique -->
+          <div class="form-group">
+              <label for="automatiqueds">Automatique DS:</label>
+              <input type="text" id="automatiqueds" name="Automatique DS">
+              <label for="automatiqueex">Automatique EX:</label>
+              <input type="text" id="automatiqueex" name="Automatique EX">
+              <label for="automatiquetp">Automatique TP:</label>
+              <input type="text" id="automatiquetp" name="Automatique TP">
+          </div>
+          <!-- instrumentation -->
+          <div class="form-group">
+              <label for="instrumentationds">Instrumentation DS:</label>
+              <input type="text" id="instrumentationds" name="Instrumentation DS">
+              <label for="instrumentationex">Instrumentation EX:</label>
+              <input type="text" id="instrumentationex" name="Instrumentation EX">
+              <label for="instrumentationtp">Instrumentation TP:</label>
+              <input type="text" id="instrumentationtp" name="Instrumentation TP">
+          </div>
+          <!-- signal -->
+          <div class="form-group">
+              <label for="signalds">Signal DS:</label>
+              <input type="text" id="signalds" name="Signal DS">
+              <label for="signalex">Signal EX:</label>
+              <input type="text" id="signalex" name="Signal EX">
+              <label for="signaltp">Signal TP:</label>
+              <input type="text" id="signaltp" name="Signal TP">
+          </div>
+          <!-- transmission-->
+          <div class="form-group">
+              <label for="transmissionds">Transmission DS:</label>
+              <input type="text" id="transmissionds" name="Transmission DS">
+              <label for="transmissionex">Transmission EX:</label>
+              <input type="text" id="transmissionex" name="Transmission EX">
+              <label for="transmissiontp">Transmission TP:</label>
+              <input type="text" id="transmissiontp" name="Transmission TP">
+          </div>
+          <!-- electronique -->
+          <div class="form-group">
+              <label for="electroniqueds">Electronique DS:</label>
+              <input type="text" id="electroniqueds" name="Electronique DS">
+              <label for="electroniqueex">Electronique EX:</label>
+              <input type="text" id="electroniqueex" name="Electronique EX">
+              <label for="electroniquetp">Electronique TP:</label>
+              <input type="text" id="electroniquetp" name="Electronique TP">
+          </div>
+          <!-- Archi -->
+          <div class="form-group">
+              <label for="archids">ArchiMicro DS:</label>
+              <input type="text" id="archids" name="ArchiMicro DS">
+              <label for="archiex">ArchiMicro EX:</label>
+              <input type="text" id="archiex" name="ArchiMicro EX">
+          </div>
+          <!-- physique -->
+          <div class="form-group">
+              <label for="physiqueds">Physique DS:</label>
+              <input type="text" id="physiqueds" name="Physique DS">
+              <label for="physiqueex">Physique EX:</label>
+              <input type="text" id="physiqueex" name="Physique EX">
+          </div>
+          <!-- prog -->
+          <div class="form-group">
+              <label for="progds">Programmation DS:</label>
+              <input type="text" id="progds" name="Programmation DS">
+              <label for="progex">Programmation EX:</label>
+              <input type="text" id="progex" name="Programmation EX">
+          </div>
+          <!-- Langues -->
+          <div class="form-group">
+              <label for="anglaisds1">Anglais DS1:</label>
+              <input type="text" id="anglaisds1" name="Anglais DS1">
+              <label for="anglaisds2">Anglais DS2:</label>
+              <input type="text" id="anglaisds2" name="Anglais DS2">
+              <label for="anglaisoral">Anglais ORAL:</label>
+              <input type="text" id="anglaisoral" name="Anglais ORAL">
+          </div>
+          <div class="form-group">
+              <label for="cultureds1">Culture DS1:</label>
+              <input type="text" id="cultureds1" name="Culture DS1">
+              <label for="cultureds2">Culture DS2:</label>
+              <input type="text" id="cultureds2" name="Culture DS2">
+              <label for="cultureoral">Culture ORAL:</label>
+              <input type="text" id="cultureoral" name="Culture ORAL">
+          </div>
+          <input type="button" id="btnRES" value="حساب المعدل" onclick="RES()">
+      </form>
+  </div>
+  <footer>
+    <p class="foot">© 2025-2024</p>
+    <p>موقع يساعد طالب المعهد العالي للإعلامية و الملتيميديا بقابس على احتساب معدل السداسي الأول</p>
+    
+    <p class="foot">: إعداد الطالب</p>
+    <p>وائل حريزي</p>
+  </footer>
+  <div id="toast"></div>
+
+    <script>
+        // JavaScript to handle click event
+        document.getElementById('button').addEventListener('click', function() {
+          // Redirect to index.html
+          window.location.href = 'index.html';
+        });
+
+               // Function to show toast message
+  function showToast(message) {
+    var toast = document.getElementById("toast");
+    toast.className = "show";
+    toast.innerHTML = message;
+    setTimeout(function() { toast.className = toast.className.replace("show", ""); }, 3000);
+  }
+
+  // Function to validate input values
+  function validateInput(event) {
+    const value = parseFloat(event.target.value);
+    const fieldName = event.target.name;
+    if (isNaN(value) || value < 0 || value > 20) {
+      if (value < 0) {
+        showToast(`In ${fieldName}, you put a number less than 0`);
+      } else if (value > 20) {
+        showToast(`In ${fieldName}, you put a number greater than 20`);
+      }
+      event.target.value = '';
+    }
+  }
+
+  // Add event listeners to all input fields
+  window.onload = function() {
+    const inputs = document.querySelectorAll("input[type='text']");
+    inputs.forEach(input => {
+      input.addEventListener("input", validateInput);
+    });
+  }
+  
+        function RES() {
+    try {
+        const num1 = parseFloat(document.getElementById("automatiqueds").value)   ;
+        const num2 = parseFloat(document.getElementById("automatiqueex").value)   ;
+        const num3 = parseFloat(document.getElementById("automatiquetp").value)   ;
+        const result1 = num1 * 0.15 + num3 * 0.15 + num2 * 0.7;
+        
+        const num4 = parseFloat(document.getElementById("instrumentationds").value)   ;
+        const num5 = parseFloat(document.getElementById("instrumentationex").value)   ;
+        const num6 = parseFloat(document.getElementById("instrumentationtp").value)   ;
+        const result2 = num4 * 0.15 + num6 * 0.15 + num5 * 0.7;
+        
+        const num7 = parseFloat(document.getElementById("signalds").value)   ;
+        const num8 = parseFloat(document.getElementById("signalex").value)   ;
+        const num9 = parseFloat(document.getElementById("signaltp").value)   ;
+        const result3 = num7 * 0.15 + num9 * 0.15 + num8 * 0.7;
+        
+        const num10 = parseFloat(document.getElementById("transmissionds").value)   ;
+        const num11 = parseFloat(document.getElementById("transmissionex").value)   ;
+        const num12 = parseFloat(document.getElementById("transmissiontp").value)   ;
+        const result4 = num10 * 0.15 + num12 * 0.15 + num11 * 0.7;
+        
+        const num13 = parseFloat(document.getElementById("electroniqueds").value)   ;
+        const num14 = parseFloat(document.getElementById("electroniqueex").value)   ;
+        const num15 = parseFloat(document.getElementById("electroniquetp").value)   ;
+        const result5 = num13 * 0.15 + num15 * 0.15 + num14 * 0.7;
+        
+        const num16 = parseFloat(document.getElementById("archids").value)   ;
+        const num17 = parseFloat(document.getElementById("archiex").value)   ;
+        const result6 = num16 * 0.3 + num17 * 0.7;
+        
+        const num18 = parseFloat(document.getElementById("physiqueds").value)   ;
+        const num19 = parseFloat(document.getElementById("physiqueex").value)   ;
+        const result7 = num18 * 0.3 + num19 * 0.7;
+        
+        const num20 = parseFloat(document.getElementById("progds").value)   ;
+        const num21 = parseFloat(document.getElementById("progex").value)   ;
+        const result8 = num20 * 0.3 + num21 * 0.7;
+        
+        const num22 = parseFloat(document.getElementById("anglaisds1").value)   ;
+        const num23 = parseFloat(document.getElementById("anglaisds2").value)   ;
+        const num24 = parseFloat(document.getElementById("anglaisoral").value)   ;
+        const result9 = num22 * 0.4 + num23 * 0.4 + num24 * 0.2;
+        
+        const num25 = parseFloat(document.getElementById("cultureds1").value)   ;
+        const num26 = parseFloat(document.getElementById("cultureds2").value)   ;
+        const num27 = parseFloat(document.getElementById("cultureoral").value)   ;
+        const result10 = num25 * 0.4 + num26 * 0.4 + num27 * 0.2;
+        
+        const result = (result1 * 1.5 + result2 * 1.5 + result3 * 1.5 + result4 * 1.5 + result5 * 1.5 + result6 * 1.5 + result7 * 1.5 + result8 * 1.5 + result9 * 1.5 + result10 * 1.5) / 15;
+        
+        const btnRES = document.getElementById("btnRES");
+        if (result >= 10) {
+            btnRES.value = `${result.toFixed(2)} MABROUUK`;
+        } else {
+            btnRES.value = `${result.toFixed(2)} HARD LUCK 😢`;
+        }
+    } catch (error) {
+        document.getElementById("btnRES").value = 'Please enter valid numbers';
+    }
+}
+    </script>
+</body>
+</html>

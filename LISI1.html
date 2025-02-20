@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc moy LISI1</title>
+    <link rel="icon" type="image/webP" href="isim-removebg-preview.webP">
+    <link rel="preload" as="image" href="isim-removebg-preview.webP">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="nav" id="button">
+           <input type="checkbox"/>
+           <svg>
+             <use xlink:href="#menu" />
+             <use xlink:href="#menu" />
+           </svg>
+           <span class="tooltip">Home Page</span>
+         </div>
+         <!-- SVG -->
+         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+           <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" id="menu">
+             <path d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4"/>
+           </symbol>
+         </svg>
+         <div id="img">
+           <div id="par">
+             <p><b>كيين لإحتساب المعدل</b></p>
+           </div>
+           <img  src="isim-removebg-preview.webP" alt="Image" style="width: 50px; height: 50px;" > 
+        </div> 
+    </header>
+    <div class="line"></div>
+    <nav class="introduction">
+        <p> <b>LISI1</b>  مع هذا الموقع يمكنك   <span class="highlight">احتساب</span> معدلك للسداسي الاول   قسم </p>
+    </nav>
+
+    <div class="container">
+      <h2>Enter the grades</h2>
+      <form>
+          <!-- Algebre -->
+          <div class="form-group">
+              <label for="Algebreds">Algebre DS:</label>
+              <input type="text" id="Algebreds" name="Algebre DS">
+              <label for="Algebreex">Algebre EX:</label>
+              <input type="text" id="Algebreex" name="Algebre EX">
+              
+          </div>
+          <!-- Analyse -->
+          <div class="form-group">
+              <label for="Analyseds">Analyse DS:</label>
+              <input type="text" id="Analyseds" name="Analyse DS">
+              <label for="Analyseex">Analyse EX:</label>
+              <input type="text" id="Analyseex" name="Analyse EX">
+              
+          </div>
+          <!-- Electricite -->
+          <div class="form-group">
+              <label for="Electriciteds">Electricite DS:</label>
+              <input type="text" id="Electriciteds" name="Electricite DS">
+              <label for="Electriciteex">Electricite EX:</label>
+              <input type="text" id="Electriciteex" name="Electricite EX">
+              <label for="Electricitetp">Electricite TP:</label>
+              <input type="text" id="Electricitetp" name="Electricite TP">
+          </div>
+          <!-- Ondes-->
+          <div class="form-group">
+              <label for="Ondesds">Ondes DS:</label>
+              <input type="text" id="Ondesds" name="Ondes DS">
+              <label for="Ondesex">Ondes EX:</label>
+              <input type="text" id="Ondesex" name="Ondes EX">
+              
+          </div>
+          <!-- SysExploitation -->
+          <div class="form-group">
+              <label for="SysExploitationds">SysExploitation DS:</label>
+              <input type="text" id="SysExploitationds" name="SysExploitation DS">
+              <label for="SysExploitationex">SysExploitation EX:</label>
+              <input type="text" id="SysExploitationex" name="SysExploitation EX">
+              <label for="SysExploitationtp">SysExploitation TP:</label>
+              <input type="text" id="SysExploitationtp" name="SysExploitation TP">
+          </div>
+          <!-- SysLogique -->
+          <div class="form-group">
+              <label for="SysLogiqueds">SysLogique DS:</label>
+              <input type="text" id="SysLogiqueds" name="SysLogique DS">
+              <label for="SysLogiqueex">SysLogique EX:</label>
+              <input type="text" id="SysLogiqueex" name="SysLogique EX">
+              <label for="SysLogiquetp">SysLogique TP:</label>
+              <input type="text" id="SysLogiquetp" name="SysLogique TP">
+          </div>
+          <!-- ASD -->
+          <div class="form-group">
+              <label for="ASDds">ASD DS:</label>
+              <input type="text" id="ASDds" name="ASD DS">
+              <label for="ASDex">ASD EX:</label>
+              <input type="text" id="ASDex" name="ASD EX">
+              <label for="ASDtp">ASD TP:</label>
+              <input type="text" id="ASDtp" name="ASD TP">
+          </div>
+          <!-- Programmation -->
+          <div class="form-group">
+              <label for="Programmationds1">Programmation DS1:</label>
+              <input type="text" id="Programmationds1" name="Programmation DS1">
+              <label for="Programmationds2">Programmation DS2:</label>
+              <input type="text" id="Programmationds2" name="Programmation DS2">
+              <label for="Programmationoral">Programmation ORAL:</label>
+              <input type="text" id="Programmationoral" name="Programmation ORAL">
+          </div>
+          <!-- Langues -->
+          <div class="form-group">
+              <label for="anglaisds1">Anglais DS1:</label>
+              <input type="text" id="anglaisds1" name="Anglais DS1">
+              <label for="anglaisds2">Anglais DS2:</label>
+              <input type="text" id="anglaisds2" name="Anglais DS2">
+              <label for="anglaisoral">Anglais ORAL:</label>
+              <input type="text" id="anglaisoral" name="Anglais ORAL">
+          </div>
+          <div class="form-group">
+              <label for="TechCommunicationds1">TechCommunication DS1:</label>
+              <input type="text" id="TechCommunicationds1" name="TechCommunication DS1">
+              <label for="TechCommunicationds2">TechCommunication DS2:</label>
+              <input type="text" id="TechCommunicationds2" name="TechCommunication DS2">
+              <label for="TechCommunicationoral">TechCommunication ORAL:</label>
+              <input type="text" id="TechCommunicationoral" name="TechCommunication ORAL">
+          </div>
+          <input type="button" id="btnRES" value="حساب المعدل" onclick="RES()">
+      </form>
+  </div>
+  <footer>
+    <p class="foot">© 2025-2024</p>
+    <p>موقع يساعد طالب المعهد العالي للإعلامية و الملتيميديا بقابس على احتساب معدل السداسي الأول</p>
+    
+    <p class="foot">: إعداد الطالب</p>
+    <p>وائل حريزي</p>
+  </footer>
+  <div id="toast"></div>
+
+    <script>
+        // JavaScript to handle click event
+        document.getElementById('button').addEventListener('click', function() {
+          // Redirect to index.html
+          window.location.href = 'index.html';
+        });
+
+               // Function to show toast message
+  function showToast(message) {
+    var toast = document.getElementById("toast");
+    toast.className = "show";
+    toast.innerHTML = message;
+    setTimeout(function() { toast.className = toast.className.replace("show", ""); }, 3000);
+  }
+
+  // Function to validate input values
+  function validateInput(event) {
+    const value = parseFloat(event.target.value);
+    const fieldName = event.target.name;
+    if (isNaN(value) || value < 0 || value > 20) {
+      if (value < 0) {
+        showToast(`In ${fieldName}, you put a number less than 0`);
+      } else if (value > 20) {
+        showToast(`In ${fieldName}, you put a number greater than 20`);
+      }
+      event.target.value = '';
+    }
+  }
+
+  // Add event listeners to all input fields
+  window.onload = function() {
+    const inputs = document.querySelectorAll("input[type='text']");
+    inputs.forEach(input => {
+      input.addEventListener("input", validateInput);
+    });
+  }
+  
+        function RES() {
+    try {
+        const num1 = parseFloat(document.getElementById("Algebreds").value)   ;
+        const num2 = parseFloat(document.getElementById("Algebreex").value)   ;
+        
+        const result1 = num1 * 0.3 + num2 * 0.7;
+        
+        const num4 = parseFloat(document.getElementById("Analyseds").value)   ;
+        const num5 = parseFloat(document.getElementById("Analyseex").value)   ;
+        
+        const result2 = num4 * 0.3 + num5 * 0.7;
+        
+        const num7 = parseFloat(document.getElementById("Electriciteds").value)   ;
+        const num8 = parseFloat(document.getElementById("Electriciteex").value)   ;
+        const num9 = parseFloat(document.getElementById("Electricitetp").value)   ;
+        const result3 = num7 * 0.15 + num9 * 0.15 + num8 * 0.7;
+        
+        const num10 = parseFloat(document.getElementById("Ondesds").value)   ;
+        const num11 = parseFloat(document.getElementById("Ondesex").value)   ;
+        
+        const result4 = num10 * 0.30 + num11 * 0.7;
+        
+        const num13 = parseFloat(document.getElementById("SysExploitationds").value)   ;
+        const num14 = parseFloat(document.getElementById("SysExploitationex").value)   ;
+        const num15 = parseFloat(document.getElementById("SysExploitationtp").value)   ;
+        const result5 = num13 * 0.15 + num15 * 0.15 + num14 * 0.7;
+        
+        const num16 = parseFloat(document.getElementById("SysLogiqueds").value)   ;
+        const num17 = parseFloat(document.getElementById("SysLogiqueex").value)   ;
+        const num18 = parseFloat(document.getElementById("SysLogiquetp").value)   ;
+        const result6 = num16 * 0.15 + num18 * 0.15 + num17 * 0.7;
+        
+        const num19 = parseFloat(document.getElementById("ASDds").value)   ;
+        const num20 = parseFloat(document.getElementById("ASDex").value)   ;
+        
+        const result7 = num19 * 0.3 + num20 * 0.7;
+        
+        const num22 = parseFloat(document.getElementById("Programmationds1").value)   ;
+        const num23 = parseFloat(document.getElementById("Programmationds2").value)   ;
+        const num24 = parseFloat(document.getElementById("Programmationoral").value)   ;
+        const result8 = num22 * 0.4 + num23 * 0.4 + num24 * 0.2;
+        
+        const num25 = parseFloat(document.getElementById("anglaisds1").value)   ;
+        const num26 = parseFloat(document.getElementById("anglaisds2").value)   ;
+        const num27 = parseFloat(document.getElementById("anglaisoral").value)   ;
+        const result9 = num25 * 0.4 + num26 * 0.4 + num27 * 0.2;
+        
+        const num28 = parseFloat(document.getElementById("TechCommunicationds1").value)   ;
+        const num29 = parseFloat(document.getElementById("TechCommunicationds2").value)   ;
+        const num30 = parseFloat(document.getElementById("TechCommunicationoral").value)   ;
+        const result10 = num28 * 0.4 + num29 * 0.4 + num30 * 0.2;
+        
+        const result = (result1 * 1.5 + result2 * 1.5 + result3 * 2 + result4 + result5 * 2 + result6 * 1.5 + result7 * 2 + result8 * 1.5 + result9 + result10) / 15;
+        
+        const btnRES = document.getElementById("btnRES");
+        if (result >= 10) {
+            btnRES.value = `${result.toFixed(2)} MABROUUK`;
+        } else {
+            btnRES.value = `${result.toFixed(2)} HARD LUCK 😢`;
+        }
+    } catch (error) {
+        document.getElementById("btnRES").value = 'Please enter valid numbers';
+    }
+}
+    </script>
+</body>
+
+
+
+
+
+
+
+
+</html>

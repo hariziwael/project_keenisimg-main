@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc moy LAM2</title>
+    <link rel="icon" type="image/webP" href="isim-removebg-preview.webP">
+    <link rel="preload" as="image" href="isim-removebg-preview.webP">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="nav" id="button">
+           <input type="checkbox"/>
+           <svg>
+             <use xlink:href="#menu" />
+             <use xlink:href="#menu" />
+           </svg>
+           <span class="tooltip">Home Page</span>
+         </div>
+         <!-- SVG -->
+         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+           <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" id="menu">
+             <path d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4"/>
+           </symbol>
+         </svg>
+         <div id="img">
+           <div id="par">
+             <p><b>كيين لإحتساب المعدل</b></p>
+           </div>
+           <img  src="isim-removebg-preview.webP" alt="Image" style="width: 50px; height: 50px;" > 
+        </div> 
+    </header>
+    <div class="line"></div>
+    <nav class="introduction">
+        <p> <b>LAM2</b>  مع هذا الموقع يمكنك   <span class="highlight">احتساب</span> معدلك للسداسي الاول   قسم </p>
+    </nav>
+
+    <div class="container">
+      <h2>Enter the grades</h2>
+      <form>
+           <!-- web_avance -->
+          <div class="form-group">
+            <label for="web_avanceds1">WebAvance DS1:</label>
+            <input type="text" id="web_avanceds1" name="WebAvance DS1">
+            <label for="web_avanceds2">WebAvance DS2:</label>
+            <input type="text" id="web_avanceds2" name="WebAvance DS2">
+            <label for="web_avanceoral">WebAvance ORAL:</label>
+            <input type="text" id="web_avanceoral" name="WebAvance ORAL">
+        </div>
+        <!-- creation_multimidia -->
+        <div class="form-group">
+            <label for="creation_multimidiads1">CreationMultimidia DS1:</label>
+            <input type="text" id="creation_multimidiads1" name="CreationMultimidia DS1">
+            <label for="creation_multimidiads2">CreationMultimidia DS2:</label>
+            <input type="text" id="creation_multimidiads2" name="CreationMultimidia DS2">
+            <label for="creation_multimidiaoral">CreationMultimidia ORAL:</label>
+            <input type="text" id="creation_multimidiaoral" name="CreationMultimidia ORAL">
+        </div>
+          <!-- BSD -->
+          <div class="form-group">
+            <label for="BSDds">BSD DS:</label>
+            <input type="text" id="BSDds" name="BSD DS">
+            <label for="BSDex">BSD EX:</label>
+            <input type="text" id="BSDex" name="BSD EX">
+            
+          </div>
+          <!-- conception -->
+          <div class="form-group">
+              <label for="conceptionds">Conception DS:</label>
+              <input type="text" id="conceptionds" name="Conception DS">
+              <label for="conceptionex">Conception EX:</label>
+              <input type="text" id="conceptionex" name="Conception EX">
+              
+          </div>
+          <!-- tech_web   -->
+          <div class="form-group">
+              <label for="tech_webds">TechWeb DS:</label>
+              <input type="text" id="tech_webds" name="TechWeb DS">
+              <label for="tech_webex">TechWeb EX:</label>
+              <input type="text" id="tech_webex" name="TechWeb EX">
+              
+          </div>
+          
+           <!-- TechAnimation -->
+           <div class="form-group">
+            <label for="TechAnimationds1">TechAnimation DS1:</label>
+            <input type="text" id="TechAnimationds1" name="TechAnimation DS1">
+            <label for="TechAnimationds2">TechAnimation DS2:</label>
+            <input type="text" id="TechAnimationds2" name="TechAnimation DS2">
+            <label for="TechAnimationoral">TechAnimation ORAL:</label>
+            <input type="text" id="TechAnimationoral" name="TechAnimation ORAL">
+        </div>
+          <!-- Modelisation -->
+          <div class="form-group">
+            <label for="Modelisationds1">Modelisation DS1:</label>
+            <input type="text" id="Modelisationds1" name="Modelisation DS1">
+            <label for="Modelisationds2">Modelisation DS2:</label>
+            <input type="text" id="Modelisationds2" name="Modelisation DS2">
+            <label for="Modelisationoral">Modelisation ORAL:</label>
+            <input type="text" id="Modelisationoral" name="Modelisation ORAL">
+        </div>
+           <!-- anglais -->
+          <div class="form-group">
+            <label for="anglaisds1">Anglais DS1:</label>
+            <input type="text" id="anglaisds1" name="Anglais DS1">
+            <label for="anglaisds2">Anglais DS2:</label>
+            <input type="text" id="anglaisds2" name="Anglais DS2">
+            <label for="anglaisoral">Anglais ORAL:</label>
+            <input type="text" id="anglaisoral" name="Anglais ORAL">
+        </div>
+          
+          <!-- Marketing -->
+          <div class="form-group">
+            <label for="Marketingds1">Marketing DS1:</label>
+            <input type="text" id="Marketingds1" name="Marketing DS1">
+            <label for="Marketingds2">Marketing DS2:</label>
+            <input type="text" id="Marketingds2" name="Marketing DS2">
+            <label for="Marketingoral">Marketing ORAL:</label>
+            <input type="text" id="Marketingoral" name="Marketing ORAL">
+        </div>
+          
+           
+          <!-- Montage -->
+          <div class="form-group">
+              <label for="Montageds1">Montage DS1:</label>
+              <input type="text" id="Montageds1" name="Montage DS1">
+              <label for="Montageds2">Montage DS2:</label>
+              <input type="text" id="Montageds2" name="Montage DS2">
+              <label for="Montageoral">Montage ORAL:</label>
+              <input type="text" id="Montageoral" name="Montage ORAL">
+          </div>
+          <!-- Photographie-->
+          <div class="form-group">
+              <label for="Photographieds1">Photographie DS1:</label>
+              <input type="text" id="Photographieds1" name="Photographie DS1">
+              <label for="Photographieds2">Photographie DS2:</label>
+              <input type="text" id="Photographieds2" name="Photographie DS2">
+              <label for="Photographieoral">Photographie ORAL:</label>
+              <input type="text" id="Photographieoral" name="Photographie ORAL">
+          </div>
+           
+          <!-- PriseDeVue -->
+          <div class="form-group">
+            <label for="PriseDeVueds1">PriseDeVue DS1:</label>
+            <input type="text" id="PriseDeVueds1" name="PriseDeVue DS1">
+            <label for="PriseDeVueds2">PriseDeVue DS2:</label>
+            <input type="text" id="PriseDeVueds2" name="PriseDeVue DS2">
+            <label for="PriseDeVueoral">PriseDeVue ORAL:</label>
+            <input type="text" id="PriseDeVueoral" name="PriseDeVue ORAL">
+        </div>
+          <input type="button" id="btnRES" value="حساب المعدل" onclick="RES()">
+      </form>
+  </div>
+  <footer>
+    <p class="foot">© 2025-2024</p>
+    <p>موقع يساعد طالب المعهد العالي للإعلامية و الملتيميديا بقابس على احتساب معدل السداسي الأول</p>
+    
+    <p class="foot">: إعداد الطالب</p>
+    <p>وائل حريزي</p>
+  </footer>
+  <div id="toast"></div>
+
+    <script>
+        // JavaScript to handle click event
+        document.getElementById('button').addEventListener('click', function() {
+          // Redirect to index.html
+          window.location.href = 'index.html';
+        });
+
+               // Function to show toast message
+  function showToast(message) {
+    var toast = document.getElementById("toast");
+    toast.className = "show";
+    toast.innerHTML = message;
+    setTimeout(function() { toast.className = toast.className.replace("show", ""); }, 3000);
+  }
+
+  // Function to validate input values
+  function validateInput(event) {
+    const value = parseFloat(event.target.value);
+    const fieldName = event.target.name;
+    if (isNaN(value) || value < 0 || value > 20) {
+      if (value < 0) {
+        showToast(`In ${fieldName}, you put a number less than 0`);
+      } else if (value > 20) {
+        showToast(`In ${fieldName}, you put a number greater than 20`);
+      }
+      event.target.value = '';
+    }
+  }
+
+  // Add event listeners to all input fields
+  window.onload = function() {
+    const inputs = document.querySelectorAll("input[type='text']");
+    inputs.forEach(input => {
+      input.addEventListener("input", validateInput);
+    });
+  }
+
+        function RES() {
+    try {
+        const num1 = parseFloat(document.getElementById("web_avanceds1").value)  ;
+        const num2 = parseFloat(document.getElementById("web_avanceds2").value)  ;
+        const num3 = parseFloat(document.getElementById("web_avanceoral").value)  ;
+        const result1 = num1 * 0.4 + num2 * 0.4 + num3 * 0.2;
+
+        const num4 = parseFloat(document.getElementById("creation_multimidiads1").value)  ;
+        const num5 = parseFloat(document.getElementById("creation_multimidiads2").value)  ;
+        const num6 = parseFloat(document.getElementById("creation_multimidiaoral").value)  ;
+        const result2 = num4 * 0.4 + num5 * 0.4 + num6 * 0.2;
+
+        const num7 = parseFloat(document.getElementById("BSDds").value)  ;
+        const num8 = parseFloat(document.getElementById("BSDex").value)  ;
+        
+        const result3 = num7 * 0.3 + num8 * 0.7;
+
+        const num10 = parseFloat(document.getElementById("conceptionds").value)  ;
+        const num11 = parseFloat(document.getElementById("conceptionex").value)  ;
+        
+        const result4 =num10 * 0.3  +  num11 * 0.7;
+        
+        const num13 = parseFloat(document.getElementById("tech_webds").value)  ;
+        const num14 = parseFloat(document.getElementById("tech_webex").value)  ;
+        
+        const result5 = num13 * 0.3 + num14 * 0.7;
+        
+        const num16 = parseFloat(document.getElementById("TechAnimationds1").value)  ;
+        const num17 = parseFloat(document.getElementById("TechAnimationds2").value)  ;
+        const num18 = parseFloat(document.getElementById("TechAnimationoral").value)  ;
+        const result6 = num16 * 0.4 + num17 * 0.4 + num18 * 0.2;
+
+        const num19 = parseFloat(document.getElementById("Modelisationds1").value)  ;
+        const num20 = parseFloat(document.getElementById("Modelisationds2").value)  ;
+        const num21 = parseFloat(document.getElementById("Modelisationoral").value)  ;
+        const result7 = num19 * 0.4 + num20 * 0.4 + num21 * 0.2;
+
+        const num22 = parseFloat(document.getElementById("anglaisds1").value)  ;
+        const num23 = parseFloat(document.getElementById("anglaisds2").value)  ;
+        const num24 = parseFloat(document.getElementById("anglaisoral").value)  ;
+        const result8 = num22 * 0.4 + num23 * 0.4 + num24 * 0.2;
+
+        const num25 = parseFloat(document.getElementById("Marketingds1").value)  ;
+        const num26 = parseFloat(document.getElementById("Marketingds2").value)  ;
+        const num27 = parseFloat(document.getElementById("Marketingoral").value)  ;
+        const result9 = num25 * 0.4 + num26 * 0.4 + num27 * 0.2;
+
+        const num28 = parseFloat(document.getElementById("Montageds1").value)  ;
+        const num29 = parseFloat(document.getElementById("Montageds2").value)  ;
+        const num30 = parseFloat(document.getElementById("Montageoral").value)  ;
+        const result10 = num28 * 0.4 + num29 * 0.4 + num30 * 0.2;
+        
+        const num31 = parseFloat(document.getElementById("Photographieds1").value)  ;
+        const num32 = parseFloat(document.getElementById("Photographieds2").value)  ;
+        const num33 = parseFloat(document.getElementById("Photographieoral").value)  ;
+        const result11 = num31 * 0.4 + num32 * 0.4 + num33 * 0.2;
+        
+        const num34 = parseFloat(document.getElementById("PriseDeVueds1").value)  ;
+        const num35 = parseFloat(document.getElementById("PriseDeVueds2").value)  ;
+        const num36 = parseFloat(document.getElementById("PriseDeVueoral").value)  ;
+        const result12 = num34 * 0.4 + num35 * 0.4 + num36 * 0.2;
+ 
+        const result = (result1 + result2 * 2 + result3 + result4 + result5 * 1.5 + result6 * 2+ result7 * 1.5 + result8 + result9 + result10 + result11 + result12) / 15;
+        
+        const btnRES = document.getElementById("btnRES");
+        if (result >= 10) {
+            btnRES.value = `${result.toFixed(2)} MABROUUK`;
+        } else {
+            btnRES.value = `${result.toFixed(2)} HARD LUCK 😢`;
+        }
+    } catch (error) {
+        document.getElementById("btnRES").value = 'Please enter valid numbers';
+    }
+}
+    </script>
+</body>
+</html>

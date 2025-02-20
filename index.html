@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>keenisimg- Accueil</title>
+    <link rel="icon" type="image/webP" href="isim-removebg-preview.webP" />
+    <link rel="preload" as="image" href="isim-removebg-preview.webP" />
+    <link rel="preload" as="image" href="إحتساب المعدل.webP" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav" id="button">
+        <svg>
+          <use xlink:href="#menu" />
+          <use xlink:href="#menu" />
+        </svg>
+        <span class="tooltip">keenisimg- Accueil</span>
+      </div>
+      <!-- SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+        <symbol
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 56"
+          id="menu"
+        >
+          <path
+            d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4"
+          />
+        </symbol>
+      </svg>
+      <div id="img">
+        <div id="par">
+          <p><b>كيين لإحتساب المعدل</b></p>
+        </div>
+        <img
+          src="isim-removebg-preview.webP"
+          alt="Image"
+          loading="lazy"
+          title="LOGO ISIMG"
+          style="width: 50px; height: 50px"
+        />
+      </div>
+    </header>
+
+    <div class="line"></div>
+    <div class="image-container">
+      <img
+        class="Image"
+        src="إحتساب المعدل.webP"
+        alt="Image"
+        loading="lazy"
+        title="إحتساب المعدل"
+        width="1000"
+        height="350"
+      />
+      <!-- Keep the image source -->
+    </div>
+    <nav class="introduction">
+      <p>
+        مع هذا الموقع يمكنك <span class="highlight">احتساب</span> معدلك للسداسي
+        الاول مهما كانت شعبتك
+      </p>
+    </nav>
+
+    <!-- Sections -->
+    <aside class="sections-container">
+      <!-- First set of sections -->
+      <div class="first-sections">
+        <!-- Large sentence -->
+        <div id="large-sentence">
+          <p>1ere année</p>
+        </div>
+        <div class="section" onclick="window.location.href='LSIM1.html'">
+          <img
+            src="LSIM.webP"
+            alt="Image 1"
+            title="LSIM1"
+            width="350"
+            height="200"
+          />
+        </div>
+        <div class="section" onclick="window.location.href='LTIC1.html'">
+          <img
+            src="LTIC.webP"
+            alt="Image 2"
+            title="LTIC1"
+            width="350"
+            height="200"
+          />
+        </div>
+        <div class="section" onclick="window.location.href='LAM1.html'">
+          <img
+            src="LAM.webP"
+            alt="Image 3"
+            title="LAM1"
+            width="350"
+            height="200"
+          />
+        </div>
+        <div class="section" onclick="window.location.href='LISI1.html'">
+          <img
+            src="LISI.webP"
+            alt="Image 4"
+            title="LISI1"
+            width="350"
+            height="200"
+          />
+        </div>
+      </div>
+
+      <!-- Second set of sections -->
+      <div class="second-sections">
+        <div id="second-large-sentence">
+          <p>2eme année</p>
+        </div>
+        <div class="section" onclick="window.location.href='LSIM2.html'">
+          <img
+            src="LSIM2.webP"
+            alt="Image 5"
+            title="LSIM2"
+            width="350"
+            height="200"
+          />
+        </div>
+        <div class="section" onclick="window.location.href='LTIC2.html'">
+          <img
+            src="LTIC2.webP"
+            alt="Image 6"
+            title="LTIC2"
+            width="350"
+            height="200"
+          />
+        </div>
+        <div class="section" onclick="window.location.href='LAM2.html'">
+          <img
+            src="LAM2.webP"
+            alt="Image 7"
+            title="LAM2"
+            width="350"
+            height="200"
+          />
+        </div>
+        <div class="section" onclick="window.location.href='LISI2.html'">
+          <img
+            src="LISI2.webP"
+            alt="Image 8"
+            title="LISI2"
+            width="350"
+            height="200"
+          />
+        </div>
+      </div>
+    </aside>
+
+    <footer>
+      <p class="foot">© 2025-2024</p>
+      <p>
+        موقع يساعد طالب المعهد العالي للإعلامية و الملتيميديا بقابس على احتساب
+        معدل السداسي الأول
+      </p>
+      <p class="foot">: إعداد الطالب</p>
+      <p>وائل حريزي</p>
+    </footer>
+
+    <script>
+      // JavaScript to handle click event
+      document.getElementById("button").addEventListener("click", function () {
+        // Redirect to index.html
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc moy LISI2</title>
+    <link rel="icon" type="image/webP" href="isim-removebg-preview.webP">
+    <link rel="preload" as="image" href="isim-removebg-preview.webP">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="nav" id="button">
+           <input type="checkbox"/>
+           <svg>
+             <use xlink:href="#menu" />
+             <use xlink:href="#menu" />
+           </svg>
+           <span class="tooltip">Home Page</span>
+         </div>
+         <!-- SVG -->
+         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+           <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" id="menu">
+             <path d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4"/>
+           </symbol>
+         </svg>
+         <div id="img">
+           <div id="par">
+             <p><b>كيين لإحتساب المعدل</b></p>
+           </div>
+           <img  src="isim-removebg-preview.webP" alt="Image" style="width: 50px; height: 50px;" > 
+        </div> 
+    </header>
+    <div class="line"></div>
+    <nav class="introduction">
+        <p> <b>LISI2</b>  مع هذا الموقع يمكنك   <span class="highlight">احتساب</span> معدلك للسداسي الاول   قسم </p>
+    </nav>
+
+    <div class="container">
+      <h2>Enter the grades</h2>
+      <form>
+          <!-- graphes -->
+          <div class="form-group">
+            <label for="graphesds">Graphes DS:</label>
+            <input type="text" id="graphesds" name="Graphes ds">
+            <label for="graphesex">Graphes EX:</label>
+            <input type="text" id="graphesex" name="Graphes ex">
+          </div>
+          <!-- proba -->
+          <div class="form-group">
+              <label for="probads">Proba DS:</label>
+              <input type="text" id="probads" name="Proba DS">
+              <label for="probaex">Proba EX:</label>
+              <input type="text" id="probaex" name="Proba EX">
+          </div>
+          <!-- reseaux   -->
+          <div class="form-group">
+              <label for="reseauxds">Reseaux DS:</label>
+              <input type="text" id="reseauxds" name="Reseaux DS">
+              <label for="reseauxex">Reseaux EX:</label>
+              <input type="text" id="reseauxex" name="Reseaux EX">
+              <label for="reseauxtp">Reseaux TP:</label>
+              <input type="text" id="reseauxtp" name="Reseaux EX">
+          </div>
+          
+          <!-- multimedia -->
+          <div class="form-group">
+              <label for="multimediads">Multimedia DS:</label>
+              <input type="text" id="multimediads" name="Multimedia DS">
+              <label for="multimediaex">Multimedia EX:</label>
+              <input type="text" id="multimediaex" name="Multimedia EX">
+          </div>
+          <!--conception-->
+          <div class="form-group">
+              <label for="conceptionds">Conception DS:</label>
+              <input type="text" id="conceptionds" name="Conception DS">
+              <label for="conceptionex">Conception EX:</label>
+              <input type="text" id="conceptionex" name="Conception EX">
+          </div>
+          <!--BSD-->
+          <div class="form-group">
+              <label for="BSDds">BSD DS:</label>
+              <input type="text" id="BSDds" name="BSD DS">
+              <label for="BSDex">BSD EX:</label>
+              <input type="text" id="BSDex" name="BSD EX">
+              <label for="BSDtp">BSD TP:</label>
+              <input type="text" id="BSDtp" name="BSD TP">
+          </div>
+          <!--OOP-->
+          <div class="form-group">
+              <label for="OOPds">OOP DS:</label>
+              <input type="text" id="OOPds" name="OOP DS">
+              <label for="OOPex">OOP EX:</label>
+              <input type="text" id="OOPex" name="OOP EX">
+              <label for="OOPtp">OOP TP:</label>
+              <input type="text" id="OOPtp" name="OOP TP">
+          </div>
+          <!-- python -->
+          <div class="form-group">
+            <label for="pythonds">Python DS:</label>
+            <input type="text" id="pythonds" name="Python DS">
+            <label for="pythonex">Python EX:</label>
+            <input type="text" id="pythonex" name="Python EX">
+            <label for="pythontp">Python TP:</label>
+            <input type="text" id="pythontp" name="Python TP">
+        </div>
+          <!-- anglais -->
+          <div class="form-group">
+              <label for="anglaisds1">Anglais DS1:</label>
+              <input type="text" id="anglaisds1" name="Anglais DS1">
+              <label for="anglaisds2">Anglais DS2:</label>
+              <input type="text" id="anglaisds2" name="Anglais DS2">
+              <label for="anglaisoral">Anglais ORAL:</label>
+              <input type="text" id="anglaisoral" name="Anglais ORAL">
+          </div>
+          <!-- gesdentreprise-->
+          <div class="form-group">
+              <label for="gesdentrepriseds1">GesDentreprise DS1:</label>
+              <input type="text" id="gesdentrepriseds1" name="GesDentreprise DS1">
+              <label for="gesdentrepriseds2">GesDentreprise DS2:</label>
+              <input type="text" id="gesdentrepriseds2" name="GesDentreprise DS2">
+              <label for="gesdentrepriseoral">GesDentreprise ORAL:</label>
+              <input type="text" id="gesdentrepriseoral" name="GesDentreprise ORAL">
+          </div>
+          <!-- automatique -->
+          <div class="form-group">
+              <label for="automatiqueds">Automatique DS:</label>
+              <input type="text" id="automatiqueds" name="Automatique DS">
+              <label for="automatiqueex">Automatique EX:</label>
+              <input type="text" id="automatiqueex" name="Automatique EX">
+          </div>
+          <!-- architecture -->
+          <div class="form-group">
+            <label for="architectureds">Architecture DS:</label>
+            <input type="text" id="architectureds" name="Architecture DS">
+            <label for="architectureex">Architecture EX:</label>
+            <input type="text" id="architectureex" name="Architecture EX">
+            <label for="architecturetp">Architecture TP:</label>
+            <input type="text" id="architecturetp" name="Architecture TP">
+        </div>
+          <input type="button" id="btnRES" value="حساب المعدل" onclick="RES()">
+      </form>
+  </div>
+  <footer>
+    <p class="foot">© 2025-2024</p>
+    <p>موقع يساعد طالب المعهد العالي للإعلامية و الملتيميديا بقابس على احتساب معدل السداسي الأول</p>
+    
+    <p class="foot">: إعداد الطالب</p>
+    <p>وائل حريزي</p>
+  </footer>
+  <div id="toast"></div>
+
+    <script>
+        // JavaScript to handle click event
+        document.getElementById('button').addEventListener('click', function() {
+          // Redirect to index.html
+          window.location.href = 'index.html';
+        });
+
+               // Function to show toast message
+  function showToast(message) {
+    var toast = document.getElementById("toast");
+    toast.className = "show";
+    toast.innerHTML = message;
+    setTimeout(function() { toast.className = toast.className.replace("show", ""); }, 3000);
+  }
+
+  // Function to validate input values
+  function validateInput(event) {
+    const value = parseFloat(event.target.value);
+    const fieldName = event.target.name;
+    if (isNaN(value) || value < 0 || value > 20) {
+      if (value < 0) {
+        showToast(`In ${fieldName}, you put a number less than 0`);
+      } else if (value > 20) {
+        showToast(`In ${fieldName}, you put a number greater than 20`);
+      }
+      event.target.value = '';
+    }
+  }
+
+  // Add event listeners to all input fields
+  window.onload = function() {
+    const inputs = document.querySelectorAll("input[type='text']");
+    inputs.forEach(input => {
+      input.addEventListener("input", validateInput);
+    });
+  }
+
+        function RES() {
+    try {
+        const num1 = parseFloat(document.getElementById("graphesds").value)  ;
+        const num2 = parseFloat(document.getElementById("graphesex").value)  ;
+        const result1 = num1 * 0.3 + num2 * 0.7;
+
+        const num3 = parseFloat(document.getElementById("probads").value)  ;
+        const num4 = parseFloat(document.getElementById("probaex").value)  ;
+        const result2 =num3 * 0.3 +  num4 * 0.7;
+        
+        const num5 = parseFloat(document.getElementById("reseauxds").value)  ;
+        const num6 = parseFloat(document.getElementById("reseauxex").value)  ;
+        const num7 = parseFloat(document.getElementById("reseauxtp").value)  ;
+        const result3 = num5 * 0.15 + num7 * 0.15 + num6 * 0.7;
+        
+        const num8 = parseFloat(document.getElementById("multimediads").value)  ;
+        const num9 = parseFloat(document.getElementById("multimediaex").value)  ;
+        const result4 =num8 * 0.3 + num9 * 0.7;
+        
+        const num10 = parseFloat(document.getElementById("conceptionds").value)  ;
+        const num11 = parseFloat(document.getElementById("conceptionex").value)  ;
+        const result5 = num10 * 0.3 + num11 * 0.7;
+        
+        const num12 = parseFloat(document.getElementById("BSDds").value)  ;
+        const num13 = parseFloat(document.getElementById("BSDex").value)  ;
+        const num14 = parseFloat(document.getElementById("BSDtp").value)  ;
+        const result6 = num12 * 0.15 + num14 * 0.15 + num13 * 0.7;
+        
+        const num15 = parseFloat(document.getElementById("OOPds").value)  ;
+        const num16 = parseFloat(document.getElementById("OOPex").value)  ;
+        const num17 = parseFloat(document.getElementById("OOPtp").value)  ;
+        const result7 = num15 * 0.15 + num17 * 0.15 + num16 * 0.7;
+
+        const num18 = parseFloat(document.getElementById("pythonds").value)  ;
+        const num19 = parseFloat(document.getElementById("pythonex").value)  ;
+        const num20 = parseFloat(document.getElementById("pythontp").value)  ;
+        const result8 = num18 * 0.15 + num20 * 0.15 + num19 * 0.7;
+
+        const num21 = parseFloat(document.getElementById("anglaisds1").value)  ;
+        const num22 = parseFloat(document.getElementById("anglaisds2").value)  ;
+        const num23 = parseFloat(document.getElementById("anglaisoral").value)  ;
+        const result9 = num21 * 0.4 + num22 * 0.4 + num23 * 0.2;
+        
+        const num24 = parseFloat(document.getElementById("gesdentrepriseds1").value)  ;
+        const num25 = parseFloat(document.getElementById("gesdentrepriseds2").value)  ;
+        const num26 = parseFloat(document.getElementById("gesdentrepriseoral").value)  ;
+        const result10 = num24 * 0.4 + num25 * 0.4 + num26 * 0.2;
+        
+        const num27 = parseFloat(document.getElementById("automatiqueds").value)  ;
+        const num28 = parseFloat(document.getElementById("automatiqueex").value)  ;
+        const result11 = num27 * 0.3 + num28 * 0.7;
+        
+        const num29 = parseFloat(document.getElementById("architectureds").value)  ;
+        const num30 = parseFloat(document.getElementById("architectureex").value)  ;
+        const num31 = parseFloat(document.getElementById("architecturetp").value)  ;
+        const result12 = num29 * 0.15 + num31 * 0.15 + num30 * 0.7;
+
+        const result = (result1 + result2 + result3 * 2 + result4 + result5 + result6 + result7 * 1.5 + result8 * 1.5 + result9 + result10 + result11 * 1.5 + result12 * 1.5) / 15;
+        
+        const btnRES = document.getElementById("btnRES");
+        if (result >= 10) {
+            btnRES.value = `${result.toFixed(2)} MABROUUK`;
+        } else {
+            btnRES.value = `${result.toFixed(2)} HARD LUCK 😢`;
+        }
+    } catch (error) {
+        document.getElementById("btnRES").value = 'Please enter valid numbers';
+    }
+}
+    </script>
+</body>
+</html>
